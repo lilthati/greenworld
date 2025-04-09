@@ -6,6 +6,7 @@ body {
   background-color: #f4f4f4;
   color: #333;
   line-height: 1.6;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 header {
@@ -57,4 +58,31 @@ footer {
   text-align: center;
   padding: 1rem;
   margin-top: 2rem;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+  background-color: #121212;
+  color: #f4f4f4;
+}
+
+body.dark-mode #about,
+body.dark-mode #resources,
+body.dark-mode #contact {
+  background: #1e1e1e;
+  color: #f4f4f4;
+}
+
+.toggle-btn {
+  background: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.toggle-btn:hover {
+  background: #ddd;
 }
